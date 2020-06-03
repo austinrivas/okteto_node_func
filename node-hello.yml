@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://openfaas-ingress-austinrivas.cloud.okteto.net
+functions:
+  node-hello:
+    lang: node12
+    handler: ./function
+    image: austinrivas/node-hello:latest
+
